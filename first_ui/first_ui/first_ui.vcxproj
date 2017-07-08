@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5C3E23A-2482-4592-930C-B48212B45390}</ProjectGuid>
+    <RootNamespace>first_ui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\msys32\mingw32\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\msys32\mingw32\include\gtk-3.0;C:\msys32\mingw32\lib\libffi-3.2.1\include;C:\msys32\mingw32\lib\glib-2.0\include;C:\msys32\mingw32\lib\;C:\msys32\mingw32\include\pixman-1;C:\msys32\mingw32\include\pango-1.0;C:\msys32\mingw32\include\lzma;C:\msys32\mingw32\include\libxml2;C:\msys32\mingw32\include\librsvg-2.0;C:\msys32\mingw32\include\libpng16;C:\msys32\mingw32\include\libcroco-0.6;C:\msys32\mingw32\include\glib-2.0;C:\msys32\mingw32\include\gio-win32-2.0;C:\msys32\mingw32\include\gdk-pixbuf-2.0;C:\msys32\mingw32\include\gail-3.0;C:\msys32\mingw32\include\freetype2;C:\msys32\mingw32\include\fontconfig;C:\msys32\mingw32\include\cairo;C:\msys32\mingw32\include\atk-1.0\;C:\msys32\mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libaspell.dll.a;libgdbm.dll.a;libgstallocators-1.0.dll.a;libhunspell.dll.a;libpangoft2-1.0.dll.a;libtcl86.dll.a;libasprintf.dll.a;libgdk_pixbuf-2.0.dll.a;libgstapp-1.0.dll.a;libhunspell-1.6.dll.a;libpangowin32-1.0.dll.a;libtermcap.dll.a;libatk-1.0.dll.a;libgdk-3.dll.a;libgstaudio-1.0.dll.a;libiconv.dll.a;libpcre.dll.a;libtheora.dll.a;libbz2.dll.a;libgdk-win32-2.0.dll.a;libgstbase-1.0.dll.a;libicudt.dll.a;libpcre16.dll.a;libtheoradec.dll.a;libcairo.dll.a;libgeoclue.dll.a;libgstcheck-1.0.dll.a;libicuin.dll.a;libpcre32.dll.a;libtheoraenc.dll.a;libcairo-gobject.dll.a;libgettextlib.dll.a;libgstcontroller-1.0.dll.a;libicuio.dll.a;libpcrecpp.dll.a;libtiff.dll.a;libcairo-script-interpreter.dll.a;libgettextpo.dll.a;libgstfft-1.0.dll.a;libicutest.dll.a;libpcreposix.dll.a;libtiffxx.dll.a;libcharset.dll.a;libgettextsrc.dll.a;libgstnet-1.0.dll.a;libicutu.dll.a;libpeas-1.0.dll.a;libtk.dll.a;libcroco-0.6.dll.a;libgif.dll.a;libgstpbutils-1.0.dll.a;libicuuc.dll.a;libpeas-gtk-1.0.dll.a;libtk86.dll.a;libcrypto.dll.a;libgio-2.0.dll.a;libgstreamer-1.0.dll.a;libidn.dll.a;libpixman-1.dll.a;libtre.dll.a;libdbus-1.dll.a;libgirepository-1.0.dll.a;libgstriff-1.0.dll.a;libintl.dll.a;libpng.dll.a;libturbojpeg.dll.a;libdbus-glib-1.dll.a;libgladeui-2.dll.a;libgstrtp-1.0.dll.a;libjasper.dll.a;libpng16.dll.a;libunistring.dll.a;libdevhelp-3.dll.a;libGLESv2.dll.a;libgstrtsp-1.0.dll.a;libjavascriptcoregtk-3.0.dll.a;libpspell.dll.a;libvala-0.36.dll.a;libedit.dll.a;libglib-2.0.dll.a;libgstsdp-1.0.dll.a;libjpeg.dll.a;libpython2.7.dll.a;libvorbis.dll.a;libEGL.dll.a;libgmodule-2.0.dll.a;libgsttag-1.0.dll.a;libjson-glib-1.0.dll.a;libpython3.6.dll.a;libvorbisenc.dll.a;libenchant.dll.a;libgmp.dll.a;libgstvideo-1.0.dll.a;liblzma.dll.a;libpython3.6m.dll.a;libvorbisfile.dll.a;libepoxy.dll.a;libgmpxx.dll.a;libgthread-2.0.dll.a;liblzo2.dll.a;libreadline.dll.a;libvorbisidec.dll.a;libexpat.dll.a;libgnurx.dll.a;libgtk-3.dll.a;libminizip.dll.a;libregex.dll.a;libwebkitgtk-3.0.dll.a;libexslt.dll.a;libgnutls.dll.a;libgtkreftestprivate.dll.a;libnettle.dll.a;librsvg-2.dll.a;libwebp.dll.a;libffi.dll.a;libgnutlsxx.dll.a;libgtksourceview-3.0.dll.a;libogg.dll.a;libsoup-2.4.dll.a;libwebpdecoder.dll.a;libfontconfig.dll.a;libgobject-2.0.dll.a;libgtk-win32-2.0.dll.a;libopus.dll.a;libsoup-gnome-2.4.dll.a;libwebpdemux.dll.a;libfreeglut.dll.a;libgpg-error.dll.a;libharfbuzz.dll.a;liborc-0.4.dll.a;libsqlite3.dll.a;libwebpmux.dll.a;libfreetype.dll.a;libgraphite2.dll.a;libharfbuzz-gobject.dll.a;liborc-test-0.4.dll.a;libssl.dll.a;libxml2.dll.a;libgailutil.dll.a;libgsl.dll.a;libharfbuzz-icu.dll.a;libp11-kit.dll.a;libsystre.dll.a;libxslt.dll.a;libgailutil-3.dll.a;libgslcblas.dll.a;libhistory.dll.a;libpango-1.0.dll.a;libtasn1.dll.a;libz.dll.a;libgcrypt.dll.a;libgspell-1.dll.a;libhogweed.dll.a;libpangocairo-1.0.dll.a;libtcl.dll.a;libatk-1.0.a;libcroco-0.6.a;libgdk_pixbuf-2.0.a;libgio-2.0.a;libgirepository-1.0.a;libglib-2.0.a;libgmodule-2.0.a;libgobject-2.0.a;libgthread-2.0.a;libhunspell-1.6.a;liborc-0.4.a;liborc-test-0.4.a;libpango-1.0.a;libpangocairo-1.0.a;libpangoft2-1.0.a;libpangowin32-1.0.a;libpeas-1.0.a;libpeas-gtk-1.0.a;libsoup-2.4.a;libsoup-gnome-2.4.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
